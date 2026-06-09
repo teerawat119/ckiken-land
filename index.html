@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Land</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="h">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a href="#h" class="navbar-brand d-flex align-items-center">
+                    <img src="/img/logo.png" alt="Logo" class="me-2" style="height: 45px; onerror=this.style.display='none'">
+                    <span>Chicken Land</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#h" class="nav-link">หน้าแรก</a></li>
+                        <li class="nav-item"><a href="#ck1" class="nav-link">ไก่เนื้อ</a></li>
+                        <li class="nav-item"><a href="#ck2" class="nav-link">ไก่ไข่</a></li>
+                        <li class="nav-item"><a href="#ck3" class="nav-link">ไก่พื้นเมือง</a></li>
+                        <li class="nav-item"><a href="#ck4" class="nav-link">ไก่สวยงาม</a></li>
+                        <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <div class="container">
+            <h1 class="display-3 mb-4 fw-bold">Welcome to Chicken Land</h1>
+            <p class="lead mx-auto" style="max-width: 800px;">เว็บไซต์นี้จัดทำขึ้นเพื่อให้ความรู้เกี่ยวกับประเภทของไก่ โดยอธิบายลักษณะและการเลี้ยงของไก่แต่ละชนิด พร้อมภาพประกอบเพื่อให้เข้าใจง่าย อีกทั้งยังช่วยให้ผู้ที่สนใจสามารถเปรียบเทียบความแตกต่างของไก่แต่ละประเภทได้อย่างชัดเจน เช่น ไก่เนื้อ ไก่ไข่ ไก่พื้นเมือง และไก่สวยงาม ซึ่งแต่ละชนิดมีวัตถุประสงค์ในการเลี้ยงที่แตกต่างกัน 🐔</p>
+        </div>
+    </div>
+
+    <div class="container section-padding">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-dark">ประเภทของไก่ที่นิยมเลี้ยง</h2>
+            <div class="title-line mx-auto"></div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="chicken-card">
+                    <div class="card-img-wrapper">
+                        <img class="img-fluid" src="/img/c1.jfif" alt="ไก่เนื้อ">
+                    </div>
+                    <div class="card-content">
+                        <h3><a href="#ck1">ไก่เนื้อ</a></h3>
+                        <p>เลี้ยงเพื่อกินเนื้อ โตเร็วมากประมาณ 5–7 สัปดาห์ เนื้อนุ่ม น้ำหนักเยอะ นิยมเลี้ยงในฟาร์มเพื่อสร้างรายได้ไว</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="chicken-card">
+                    <div class="card-img-wrapper">
+                        <img class="img-fluid" src="/img/k1.jfif" alt="ไก่ไข่">
+                    </div>
+                    <div class="card-content">
+                        <h3><a href="#ck2">ไก่ไข่</a></h3>
+                        <p>เลี้ยงเพื่อออกไข่ เน้นให้ผลผลิตสูง โตขนาดพอดี ดูแลง่าย เป็นแหล่งโปรตีนสำคัญในชีวิตประจำวัน</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="chicken-card">
+                    <div class="card-img-wrapper">
+                        <img class="img-fluid" src="/img/m1.jfif" alt="ไก่พื้นเมือง">
+                    </div>
+                    <div class="card-content">
+                        <h3><a href="#ck3">ไก่พื้นเมือง</a></h3>
+                        <p>เลี้ยงแบบธรรมชาติตามชนบท แข็งแรง ทนทานต่อโรคได้ดี เนื้อแน่นเหนียวนุ่ม รสชาติเป็นเอกลักษณ์</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="chicken-card">
+                    <div class="card-img-wrapper">
+                        <img class="img-fluid" src="/img/b1.jfif" alt="ไก่สวยงาม">
+                    </div>
+                    <div class="card-content">
+                        <h3><a href="#ck4">ไก่สวยงาม</a></h3>
+                        <p>เลี้ยงเพื่อความเพลิดเพลินและประกวด มีขนสวยงาม สีสันหลากหลาย รูปร่างแปลกตา น่ารักน่าเลี้ยง</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section-padding" id="ck1">
+        <div class="detail-box">
+            <h2 class="section-title text-start mb-4">🐔 ไก่เนื้อ (Broiler)</h2>
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-4"><img src="/img/k1.jfif" class="img-fluid rounded-3 gallery-img" alt="ไก่เนื้อ 1"></div>
+                        <div class="col-4"><img src="/img/k2.jfif" class="img-fluid rounded-3 gallery-img" alt="ไก่เนื้อ 2"></div>
+                        <div class="col-4"><img src="/img/k3.jfif" class="img-fluid rounded-3 gallery-img" alt="ไก่เนื้อ 3"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="description-text"><strong>ไก่เนื้อ</strong> คือ ไก่ที่เลี้ยงขึ้นมาเพื่อบริโภคเนื้อโดยเฉพาะ ไม่ได้เน้นการออกไข่เหมือนไก่ไข่ โดยไก่เนื้อมีลักษณะเด่นคือโตเร็วมาก ใช้เวลาเพียงประมาณ 5–7 สัปดาห์ก็สามารถขายได้แล้ว มีน้ำหนักตัวเยอะ อกใหญ่ เนื้อนุ่ม เหมาะสำหรับนำไปทำอาหารต่าง ๆ เช่น ไก่ทอดหรือไก่ย่าง การเลี้ยงส่วนใหญ่มักเลี้ยงในระบบฟาร์มหรือโรงเรือนที่มีการควบคุมอุณหภูมิ ความสะอาด และแสงสว่างอย่างเหมาะสม เพื่อให้ไก่เติบโตได้ดีและลดความเสี่ยงต่อการเกิดโรค นอกจากนี้ยังใช้อาหารสำเร็จรูปที่มีโปรตีนสูงเพื่อเร่งการเจริญเติบโต สายพันธุ์ที่นิยมเลี้ยง เช่น Cobb 500 และ Ross 308 ซึ่งถูกพัฒนาให้โตไวและให้เนื้อเยอะ อย่างไรก็ตามไก่เนื้อค่อนข้างอ่อนแอกว่าไก่พื้นเมือง จึงต้องดูแลเรื่องความสะอาดและสุขภาพอย่างใกล้ชิด</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section-padding" id="ck2">
+        <div class="detail-box">
+            <h2 class="section-title text-start mb-4">🥚 ไก่ไข่ (Layer Chicken)</h2>
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="row g-2">
+                        <div class="col-4"><img src="/img/c1.jfif" class="img-fluid rounded-3 gallery-img" alt="ไก่ไข่ 1"></div>
+                        <div class="col-4"><img src="/img/c2.jfif" class="img-fluid rounded-3 gallery-img" alt="ไก่ไข่ 2"></div>
+                        <div class="col-4"><img src="/img/c3.jfif" class="img-fluid rounded-3 gallery-img" alt="ไก่ไข่ 3"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <p class="description-text"><strong>ไก่ไข่</strong> คือ ไก่ที่เลี้ยงเพื่อผลิตไข่สำหรับบริโภค โดยมีลักษณะเด่นคือออกไข่ได้จำนวนมากอย่างสม่ำเสมอ ตัวไม่ใหญ่มาก และกินอาหารไม่มากเมื่อเทียบกับไก่เนื้อ การเลี้ยงมักอยู่ในฟาร์มหรือโรงเรือนที่มีการจัดการอย่างเป็นระบบ เช่น ควบคุมอาหาร น้ำ และความสะอาด เพื่อให้ไก่มีสุขภาพดีและออกไข่ได้ต่อเนื่อง สายพันธุ์ที่นิยม เช่น Leghorn ซึ่งให้ไข่จำนวนมาก ไก่ไข่ถือเป็นแหล่งอาหารสำคัญของมนุษย์ เพราะไข่มีคุณค่าทางโภชนาการสูงและสามารถนำไปประกอบอาหารได้หลากหลาย</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section-padding" id="ck3">
+        <div class="detail-box">
+            <h2 class="section-title text-start mb-4">🏡 ไก่พื้นเมือง (Native Chicken)</h2>
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-4"><img src="/img/m1.jfif" class="img-fluid rounded-3 gallery-img" alt="ไก่พื้นเมือง 1"></div>
+                        <div class="col-4"><img src="/img/m2.jfif" class="img-fluid rounded-3 gallery-img" alt="ไก่พื้นเมือง 2"></div>
+                        <div class="col-4"><img src="/img/m3.jfif" class="img-fluid rounded-3 gallery-img" alt="ไก่พื้นเมือง 3"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="description-text"><strong>ไก่พื้นเมือง</strong> คือ ไก่ที่เลี้ยงแบบธรรมชาติ พบได้ทั่วไปตามชนบท มีลักษณะเด่นคือแข็งแรง ทนโรคได้ดี สามารถหากินเองได้ เช่น จิกกินแมลงหรือเศษอาหาร ตัวไม่ใหญ่มาก โตช้ากว่าไก่เนื้อ แต่เนื้อจะแน่น เหนียว และมีรสชาติดีกว่า นิยมเลี้ยงแบบปล่อยอิสระหรือเลี้ยงในพื้นที่กว้าง ใช้ต้นทุนน้อย และเหมาะสำหรับเลี้ยงไว้บริโภคหรือขายในชุมชน</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section-padding" id="ck4">
+        <div class="detail-box">
+            <h2 class="section-title text-start mb-4">✨ ไก่สวยงาม (Exotic Chicken)</h2>
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="row g-2">
+                        <div class="col-4"><img src="/img/b1.jfif" class="img-fluid rounded-3 gallery-img" alt="ไก่สวยงาม 1"></div>
+                        <div class="col-4"><img src="/img/b2.jfif" class="img-fluid rounded-3 gallery-img" alt="ไก่สวยงาม 2"></div>
+                        <div class="col-4"><img src="/img/b3.jfif" class="img-fluid rounded-3 gallery-img" alt="ไก่สวยงาม 3"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <p class="description-text"><strong>ไก่สวยงาม</strong> คือ ไก่ที่เลี้ยงเพื่อความสวยงามและความเพลิดเพลิน ไม่ได้เน้นเลี้ยงเพื่อเนื้อหรือไข่ โดยมีลักษณะเด่นคือขนสวย สีสันหลากหลาย หรือรูปร่างแปลกตา เช่น ขนฟูเหมือนขนไหม หงอนใหญ่ หรือมีลวดลายสวยงาม สายพันธุ์ที่นิยม เช่น Silkie และ Polish ไก่ประเภทนี้มักเลี้ยงเป็นสัตว์เลี้ยงหรือใช้ประกวด ต้องดูแลเรื่องความสะอาดและสุขภาพเป็นพิเศษเพื่อให้ขนสวยและแข็งแรง</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white py-5 shadow-sm" id="About">
+        <div class="container text-center py-4">
+            <h2 class="fw-bold mb-3">About Us</h2>
+            <div class="title-line mx-auto mb-4"></div>
+            <p class="lead mx-auto text-secondary" style="max-width: 750px; font-size: 1.1rem; line-height: 1.8;">ไก่มี 4 ประเภทหลัก คือ ไก่เนื้อ ไก่ไข่ ไก่พื้นเมือง และไก่สวยงาม โดยเลี้ยงตามวัตถุประสงค์ที่ต่างกัน ได้แก่ ไก่เนื้อเลี้ยงเพื่อบริโภคเนื้อ โตเร็วและเนื้อนุ่ม ไก่ไข่เลี้ยงเพื่อผลิตไข่ ออกไข่ได้จำนวนมาก ไก่พื้นเมืองเลี้ยงแบบธรรมชาติ แข็งแรง ทนโรค และเนื้อแน่น ส่วนไก่สวยงามเลี้ยงเพื่อความสวยงาม มีขนและลักษณะเด่นหลากหลาย</p>
+        </div>
+    </div>
+
+    <div class="container section-padding" id="Contact">
+        <div class="detail-box contact-box mx-auto" style="max-width: 800px;">
+            <h2 class="fw-bold text-center mb-4">Contact Us</h2>
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center d-none d-md-block">
+                    <div class="p-3">
+                        <h4 class="text-warning fw-bold">Chicken Land</h4>
+                        <p class="text-muted text-start mt-3">📍 มีข้อสงสัยหรือต้องการข้อมูลเพิ่มเติมเกี่ยวกับสายพันธุ์ไก่ สามารถส่งข้อความหาเราได้ตลอดเวลาค่ะ</p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="4" placeholder="Type your message here..." required></textarea>
+                        </div>
+                        <button class="btn btn-primary w-100 py-2.5" type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <img src="/img/logo.png" class="footer-logo" alt="Footer Logo" style="onerror=this.style.display='none'">
+            <p class="mt-3">
+                <a href="#h" class="text-decoration-none me-3">Home</a>
+                <a href="#About" class="text-decoration-none me-3">About</a>
+                <a href="#Contact" class="text-decoration-none">Contact</a>
+            </p>
+            <p class="copy mb-0">© 2026 Chicken Land. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

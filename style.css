@@ -1,0 +1,292 @@
+/* ฟอนต์ + รีเซ็ตพื้นหลัง */
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    margin: 0;
+    padding-top: 70px; /* กันเนื้อหาโดน Navbar ทับ */
+    scroll-behavior: smooth;
+}
+
+/* Common Padding */
+.section-padding {
+    padding: 80px 15px;
+}
+
+.title-line {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff9900, #ff6600);
+    border-radius: 2px;
+}
+
+/* Navbar สไตล์โมเดิร์น Glassmorphism */
+.navbar {
+    background: rgba(255, 213, 0, 0.95) !important;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 22px;
+    color: #1e293b !important;
+}
+
+.nav-link {
+    color: #334155 !important;
+    margin-left: 10px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ff5500 !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #ff5500;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Banner สวยพรีเมียม */
+.banner {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.75)),
+                url('/img/banner.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 20px;
+}
+
+.banner h1 {
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    animation: fadeDown 0.8s ease-out;
+}
+
+.banner p {
+    font-weight: 300;
+    line-height: 1.8;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.2);
+    animation: fadeUp 0.8s ease-out;
+}
+
+/* การ์ดหมวดหมู่ (แก้ไขบั๊กดีดตัวจากภาพเก่า) */
+.chicken-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chicken-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(255, 153, 0, 0.15);
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.chicken-card:hover .card-img-wrapper img {
+    transform: scale(1.08);
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.card-content h3 a {
+    color: #1e293b;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.card-content h3 a:hover {
+    color: #ff6600;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* กล่องแสดงเนื้อหารายละเอียด (Detail Sections) */
+.detail-box {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f5f9;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #0f172a;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.description-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #475569;
+    text-align: justify;
+}
+
+/* สไตล์ฟอร์มติดต่อ */
+.contact-box {
+    background: linear-gradient(to bottom right, #ffffff, #fffdf5);
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    padding: 12px 15px;
+    font-size: 14px;
+    background-color: #f8fafc;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus {
+    background-color: #fff;
+    border-color: #ff9900;
+    box-shadow: 0 0 0 4px rgba(255, 153, 0, 0.15);
+}
+
+/* ปุ่มกดไล่สีระดับพรีเมียม */
+.btn-primary {
+    background: linear-gradient(135deg, #ffaa00, #ff5500);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 85, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #ff5500, #d43d00);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 85, 0, 0.3);
+}
+
+/* ส่วนท้ายหน้าเว็บ (Footer) */
+.footer {
+    background: #0f172a;
+    color: #94a3b8;
+    padding: 40px 0;
+}
+
+.footer-logo {
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.footer a {
+    color: #cbd5e1;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: #ff9900;
+}
+
+.copy {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 15px;
+}
+
+/* Animations */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive ปรับตามขนาดหน้าจอ */
+@media (max-width: 991px) {
+    .gallery-img {
+        height: 140px;
+    }
+    .detail-box {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+    .banner h1 {
+        font-size: 34px;
+    }
+    .banner p {
+        font-size: 15px;
+    }
+    .section-padding {
+        padding: 40px 15px;
+    }
+}
